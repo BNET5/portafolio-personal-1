@@ -94,6 +94,19 @@
                 </div>
             </section>
             <hr class="m-0" />
+
+            <h1>Perfil Profesional:</h1>
+    <ul>
+        {% for perfil in perfiles %}
+            <li>
+                <strong>{{ perfil.nombres }} {{ perfil.apellidos }}</strong><br>
+                Email: {{ perfil.email }}<br>
+                Carrera: {{ perfil.carrera }}<br>
+                Celular: {{ perfil.celular }}
+            </li>
+        {% endfor %}
+    </ul>
+
             <!-- EXPERIENCIAS-->
             <section class="resume-section" id="EXPERIENCIAS">
                 <div class="resume-section-content">
